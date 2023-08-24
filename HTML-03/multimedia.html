@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <div>
+      <h1>Imagenes</h1>
+      <img src="https://picsum.photos/200/300" alt="lorem picsum" />
+    </div>
+    <div>
+      <h1>Imagenes dinamicas por tamaño de pantalla</h1>
+      <picture>
+        <source
+          media="(min-width:650px)"
+          srcset="
+            https://fastly.picsum.photos/id/585/200/300.jpg?hmac=9pIkZ1OAqMKxQt7_5yNLOWAjZBmJ99k53TBNs3xQQe4
+          "
+        />
+        <source
+          media="(min-width:465px)"
+          srcset="
+            https://fastly.picsum.photos/id/282/200/300.jpg?hmac=CVnHWoW4uSir_3zYiJzNPVs8XMSyf968WjkWvPlwu3g
+          "
+        />
+        <img
+          src="https://fastly.picsum.photos/id/728/200/300.jpg?hmac=J-q7xv6gzVRQmKunEBaFotw4F0dJ1Q6OnjN85VoBk8o"
+          alt="Flowers"
+          style="width: auto"
+        />
+      </picture>
+    </div>
+    <div>
+      <h1>Caption de imagenes</h1>
+      <figure>
+        <img src="https://picsum.photos/200/300" alt="lorem picsum" />
+        <figcaption>Lorempicsum</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
