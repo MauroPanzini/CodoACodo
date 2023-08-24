@@ -4,225 +4,199 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FunkoShop</title>
-    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="" />
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="logo.png" alt="Logo" />
-        Mi Tienda
+      <div>
+        <img
+          src="/proyectoFinal/logos/funkoshop.svg"
+          alt="FunkoShop"
+          class="logo"
+        />
       </div>
       <div class="botones">
-        <a href="#" class="boton">Shop</a>
-        <a href="#" class="boton">Contacto</a>
-        <a href="#" class="boton">Login</a>
-        <a href="#" class="carrito"><img src="carrito.png" alt="Carrito" /></a>
+        <a href="#" class="boton">SHOP</a>
+        <a href="#" class="boton">CONTACTO</a>
+        <a href="#" class="boton">LOGIN</a>
+        <a href="#" class="carrito"
+          ><img src="/proyectoFinal/logos/cart-icon.svg" alt="Carrito"
+        /></a>
       </div>
     </header>
 
-    <section id="filtros" class="contenedor-lateral">
-      <p>BUSCAR</p>
-      <input type="text" placeholder="item o categoria" />
-      <p>ORDENAR POR</p>
-      <select id="orden" name="sort">
-        <option value="precio-desc">Mayor a Menor</option>
-        <option value="precio-asc">Menor a Mayor</option>
-      </select>
-      <p>PRECIO</p>
-      <form action="" method="get">
-        <label for="precioMin">MIN</label>
-        <input
-          type="number"
-          id="precioMin"
-          name="min"
-          placeholder="0"
-          class="menu-desplegable"
-        />
-        <label for="precioMax">- MAX</label>
-        <input
-          type="number"
-          id="precioMax"
-          name="max"
-          placeholder="0"
-          class="menu-desplegable"
-        />
-      </form>
-      <p>FILTRAR</p>
-      <form action="" method="get">
-        <label
-          ><input type="checkbox" name="nuevos" value="nuevos" /> NUEVOS</label
-        ><br />
-        <label
-          ><input type="checkbox" name="ofertas" value="ofertas" />
-          OFERTAS</label
-        ><br />
-        <label
-          ><input
-            type="checkbox"
-            name="edicionEspecial"
-            value="edicion-especial"
+    <div class="margenes">
+      <section id="filtros" class="contenedor-lateral">
+        <p>BUSCAR</p>
+        <input type="text" placeholder="item o categoria" />
+        <p>ORDENAR POR</p>
+        <select id="orden" name="sort">
+          <option value="precio-desc">Mayor a Menor</option>
+          <option value="precio-asc">Menor a Mayor</option>
+        </select>
+        <p>PRECIO</p>
+        <form action="" method="get">
+          <label for="precioMin">MIN</label>
+          <input
+            type="number"
+            id="precioMin"
+            name="min"
+            placeholder="0"
+            class="menu-desplegable"
           />
-          EDICIÓN ESPECIAL</label
-        ><br />
-        <label
-          ><input type="checkbox" name="favoritos" value="favoritos" />
-          FAVORITOS</label
-        >
-      </form>
-    </section>
+          <label for="precioMax">- MAX</label>
+          <input
+            type="number"
+            id="precioMax"
+            name="max"
+            placeholder="0"
+            class="menu-desplegable"
+          />
+        </form>
+        <p>FILTRAR</p>
+        <form action="" method="get">
+          <label
+            ><input type="checkbox" name="nuevos" value="nuevos" />
+            NUEVOS</label
+          ><br />
+          <label
+            ><input type="checkbox" name="ofertas" value="ofertas" />
+            OFERTAS</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="edicionEspecial"
+              value="edicion-especial"
+            />
+            EDICIÓN ESPECIAL</label
+          ><br />
+          <label
+            ><input type="checkbox" name="favoritos" value="favoritos" />
+            FAVORITOS</label
+          >
+        </form>
+      </section>
 
-    <section id="productos" class="contenido-principal">
       <div class="producto">
         <img
-          src="https://picsum.photos/200/300"
+          src="/proyectoFinal/imagenes/trooper-1 1.png"
+          alt="Producto 2"
+          class="imagen-producto"
+        />
+        <div class="categoria">STAR WARS</div>
+        <div class="titulo-producto">STORMTROOPER LIGHTSABER</div>
+        <div class="precio">$1799.99</div>
+        <div class="cuotas">3 cuotas sin interés</div>
+      </div>
+
+      <div class="producto">
+        <img
+          src="/proyectoFinal/imagenes/trooper-1 1.png"
+          alt="Producto 2"
+          class="imagen-producto"
+        />
+        <div class="categoria">STAR WARS</div>
+        <div class="titulo-producto">STORMTROOPER LIGHTSABER</div>
+        <div class="precio">$1799.99</div>
+        <div class="cuotas">3 cuotas sin interés</div>
+      </div>
+      <div class="producto">
+        <img
+          src="/proyectoFinal/imagenes/trooper-1 1.png"
           alt="Producto 1"
           class="imagen-producto"
         />
-        <div class="categoria">Categoría 1</div>
-        <div class="titulo-producto">Producto 1</div>
-        <div class="precio">$100.00</div>
+        <div class="categoria">STAR WARS</div>
+        <div class="titulo-producto">STORMTROOPER LIGHTSABER</div>
+        <div class="precio">$1799.99</div>
         <div class="cuotas">3 cuotas sin interés</div>
       </div>
 
       <div class="producto">
         <img
-          src="https://picsum.photos/200/300"
+          src="/proyectoFinal/imagenes/luna-1 1.png"
           alt="Producto 2"
           class="imagen-producto"
         />
-        <div class="categoria">Categoría 2</div>
-        <div class="titulo-producto">Producto 2</div>
-        <div class="precio">$150.00</div>
+        <div class="categoria">HARRY POTTER</div>
+        <div class="titulo-producto">LUNA LOVEGOOD LION MASK</div>
+        <div class="precio">$1799.99</div>
         <div class="cuotas">3 cuotas sin interés</div>
       </div>
 
       <div class="producto">
         <img
-          src="https://picsum.photos/200/300"
+          src="/proyectoFinal/imagenes/luna-1 1.png"
           alt="Producto 2"
           class="imagen-producto"
         />
-        <div class="categoria">Categoría 2</div>
-        <div class="titulo-producto">Producto 2</div>
-        <div class="precio">$150.00</div>
+        <div class="categoria">HARRY POTTER</div>
+        <div class="titulo-producto">LUNA LOVEGOOD LION MASK</div>
+        <div class="precio">$1799.99</div>
         <div class="cuotas">3 cuotas sin interés</div>
       </div>
       <div class="producto">
         <img
-          src="https://picsum.photos/200/300"
+          src="/proyectoFinal/imagenes/luna-1 1.png"
           alt="Producto 1"
           class="imagen-producto"
         />
-        <div class="categoria">Categoría 1</div>
-        <div class="titulo-producto">Producto 1</div>
-        <div class="precio">$100.00</div>
+        <div class="categoria">HARRY POTTER</div>
+        <div class="titulo-producto">LUNA LOVEGOOD LION MASK</div>
+        <div class="precio">$1799.99</div>
         <div class="cuotas">3 cuotas sin interés</div>
       </div>
 
       <div class="producto">
         <img
-          src="https://picsum.photos/200/300"
+          src="/proyectoFinal/imagenes/pidgeotto-1 1.png"
           alt="Producto 2"
           class="imagen-producto"
         />
-        <div class="categoria">Categoría 2</div>
-        <div class="titulo-producto">Producto 2</div>
-        <div class="precio">$150.00</div>
+        <div class="categoria">POKEMON</div>
+        <div class="titulo-producto">PIDGEOTTO</div>
+        <div class="precio">$1799.99</div>
         <div class="cuotas">3 cuotas sin interés</div>
       </div>
 
       <div class="producto">
         <img
-          src="https://picsum.photos/200/300"
+          src="/proyectoFinal/imagenes/pidgeotto-1 1.png"
           alt="Producto 2"
           class="imagen-producto"
         />
-        <div class="categoria">Categoría 2</div>
-        <div class="titulo-producto">Producto 2</div>
-        <div class="precio">$150.00</div>
-        <div class="cuotas">3 cuotas sin interés</div>
-      </div>
-      <div class="producto">
-        <img
-          src="https://picsum.photos/200/300"
-          alt="Producto 1"
-          class="imagen-producto"
-        />
-        <div class="categoria">Categoría 1</div>
-        <div class="titulo-producto">Producto 1</div>
-        <div class="precio">$100.00</div>
+        <div class="categoria">POKEMON</div>
+        <div class="titulo-producto">PIDGEOTTO</div>
+        <div class="precio">$1799.99</div>
         <div class="cuotas">3 cuotas sin interés</div>
       </div>
 
-      <div class="producto">
-        <img
-          src="https://picsum.photos/200/300"
-          alt="Producto 2"
-          class="imagen-producto"
-        />
-        <div class="categoria">Categoría 2</div>
-        <div class="titulo-producto">Producto 2</div>
-        <div class="precio">$150.00</div>
-        <div class="cuotas">3 cuotas sin interés</div>
-      </div>
+      <section id="productos" class="contenido-principal">
+        <div class="producto">
+          <img
+            src="/proyectoFinal/imagenes/pidgeotto-1 1.png"
+            alt="Producto 1"
+            class="imagen-producto"
+          />
+          <div class="categoria">POKEMON</div>
+          <div class="titulo-producto">PIDGEOTTO</div>
+          <div class="precio">$1799.99</div>
+          <div class="cuotas">3 cuotas sin interés</div>
+        </div>
+      </section>
 
-      <div class="producto">
-        <img
-          src="https://picsum.photos/200/300"
-          alt="Producto 2"
-          class="imagen-producto"
-        />
-        <div class="categoria">Categoría 2</div>
-        <div class="titulo-producto">Producto 2</div>
-        <div class="precio">$150.00</div>
-        <div class="cuotas">3 cuotas sin interés</div>
+      <div class="contador-paginacion">
+        <span class="paginacion"><a href="#" class="pagina-actual"><</a></span>
+        <span class="paginacion"><a href="#" class="pagina-actual">1</a></span>
+        <span class="paginacion"><a href="#">2</a></span>
+        <span class="paginacion">...</span>
+        <span class="paginacion"><a href="#">9</a></span>
+        <span class="paginacion"><a href="#">10</a></span>
+        <span class="paginacion"><a href="#" class="pagina-actual">></a></span>
       </div>
-      <div class="producto">
-        <img
-          src="https://picsum.photos/200/300"
-          alt="Producto 1"
-          class="imagen-producto"
-        />
-        <div class="categoria">Categoría 1</div>
-        <div class="titulo-producto">Producto 1</div>
-        <div class="precio">$100.00</div>
-        <div class="cuotas">3 cuotas sin interés</div>
-      </div>
-
-      <div class="producto">
-        <img
-          src="https://picsum.photos/200/300"
-          alt="Producto 2"
-          class="imagen-producto"
-        />
-        <div class="categoria">Categoría 2</div>
-        <div class="titulo-producto">Producto 2</div>
-        <div class="precio">$150.00</div>
-        <div class="cuotas">3 cuotas sin interés</div>
-      </div>
-
-      <div class="producto">
-        <img
-          src="https://picsum.photos/200/300"
-          alt="Producto 2"
-          class="imagen-producto"
-        />
-        <div class="categoria">Categoría 2</div>
-        <div class="titulo-producto">Producto 2</div>
-        <div class="precio">$150.00</div>
-        <div class="cuotas">3 cuotas sin interés</div>
-      </div>
-    </section>
-
-    <div class="contador-paginacion">
-      <span class="contador">Mostrando 1-10 de 50 resultados</span>
-      <span class="paginacion"><a href="#" class="pagina-actual">1</a></span>
-      <span class="paginacion"><a href="#">2</a></span>
-      <span class="paginacion"><a href="#">3</a></span>
-      <span class="paginacion"><a href="#">4</a></span>
-      <span class="paginacion"><a href="#">5</a></span>
     </div>
-
+    <br>
     <footer>
       <div class="botones-footer">
         <a href="#" class="boton-footer">Shop</a>
@@ -233,7 +207,7 @@
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
       </div>
       <div class="logo-img">
-        <img src="logo.png" alt="Logo" />
+        <img src="/proyectoFinal/logos/SvgjsG8619.svg" alt="Logo" />
       </div>
     </footer>
   </body>
